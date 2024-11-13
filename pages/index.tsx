@@ -53,7 +53,7 @@ const Home: NextPage = ({
     const startIndex = (page - 1) * imagesPerPage;
     const endIndex = startIndex + imagesPerPage;
     return imageUrls.slice(startIndex, endIndex).map((url, index) => ({
-      id: startIndex + index + 1, // Adjust ID for new images
+      id: startIndex + index, // Adjust ID for new images
       public_id: url.split('/').pop() || '',
       url: url,
     }));
