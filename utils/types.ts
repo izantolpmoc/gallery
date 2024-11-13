@@ -1,11 +1,12 @@
 /* eslint-disable no-unused-vars */
 export interface ImageProps {
+  url: string
   id: number;
-  height: string;
-  width: string;
+  // height: string;
+  // width: string;
   public_id: string;
-  format: string;
-  blurDataUrl?: string;
+  // format: string;
+  //blurDataUrl?: string;
 }
 
 export interface SharedModalProps {
