@@ -30,10 +30,7 @@ export default async function getResults() {
     const uniqueImages = Array.from(new Map(imageUrls.map(url => [url, url])).values());
 
 
-    //cachedResults = uniqueImages;
-
-    //try to retrieve only 50 images
-    cachedResults = uniqueImages.slice(0, 50);
+    cachedResults = uniqueImages;
   }
 
   return cachedResults as string[];
