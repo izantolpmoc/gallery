@@ -48,6 +48,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     props: {
       currentPhoto: currentPhoto,
     },
+    revalidate: 60, // Regenerate the page in the background every 60 seconds
   };
 };
 
